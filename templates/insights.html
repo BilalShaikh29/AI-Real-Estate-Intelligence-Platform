@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Insights</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+background:#0f172a;
+color:white;
+padding:40px;
+}
+
+h1{
+
+text-align:center;
+font-size:50px;
+margin-bottom:15px;
+}
+
+.subtitle{
+
+text-align:center;
+color:#cbd5e1;
+margin-bottom:50px;
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+}
+
+.card{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:20px;
+
+transition:0.3s;
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+}
+
+.card h2{
+
+color:#38bdf8;
+
+margin-bottom:10px;
+}
+
+.card p{
+
+color:#cbd5e1;
+}
+
+.section{
+
+margin-top:50px;
+}
+
+.section h2{
+
+margin-bottom:20px;
+}
+
+.back{
+
+display:block;
+
+width:250px;
+
+margin:50px auto;
+
+text-align:center;
+
+padding:15px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>
+🤖 AI Insights
+</h1>
+
+<p class="subtitle">
+Understanding How The Model Predicts House Prices
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h2>1. OverallQual</h2>
+<p>Most important factor affecting house price.</p>
+</div>
+
+<div class="card">
+<h2>2. GrLivArea</h2>
+<p>Above-ground living area significantly impacts valuation.</p>
+</div>
+
+<div class="card">
+<h2>3. 2ndFlrSF</h2>
+<p>Additional floor space increases market value.</p>
+</div>
+
+<div class="card">
+<h2>4. TotalBsmtSF</h2>
+<p>Basement area contributes to overall property worth.</p>
+</div>
+
+<div class="card">
+<h2>5. BsmtFinSF1</h2>
+<p>Finished basement space adds value.</p>
+</div>
+
+<div class="card">
+<h2>6. 1stFlrSF</h2>
+<p>Main floor area strongly influences pricing.</p>
+</div>
+
+<div class="card">
+<h2>7. LotArea</h2>
+<p>Larger land parcels generally command higher prices.</p>
+</div>
+
+<div class="card">
+<h2>8. GarageArea</h2>
+<p>Bigger garages increase attractiveness.</p>
+</div>
+
+<div class="card">
+<h2>9. GarageCars</h2>
+<p>Parking capacity is a key residential feature.</p>
+</div>
+
+<div class="card">
+<h2>10. YearBuilt</h2>
+<p>Newer properties often have higher market value.</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>
+📌 Model Information
+</h2>
+
+<p>
+Algorithm Used: Random Forest Regressor
+</p>
+
+<br>
+
+<p>
+Dataset Size: 1460 Properties
+</p>
+
+<br>
+
+<p>
+Model Accuracy (R²): 0.89
+</p>
+
+</div>
+
+<a href="/dashboard" class="back">
+
+← Back To Dashboard
+
+</a>
+
+</body>
+
+</html>

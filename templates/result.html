@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Prediction Result</title>
+
+<style>
+
+body{
+
+font-family:Arial,sans-serif;
+
+background:#0f172a;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+margin:0;
+}
+
+.card{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+width:500px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1{
+
+color:#2563eb;
+
+margin-bottom:20px;
+}
+
+.price{
+
+font-size:40px;
+
+font-weight:bold;
+
+margin:25px 0;
+
+color:#0f172a;
+}
+
+.btn{
+
+display:inline-block;
+
+padding:12px 25px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+margin:10px;
+
+transition:0.3s;
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+}
+
+.dashboard-btn{
+
+background:#475569;
+}
+
+.dashboard-btn:hover{
+
+background:#334155;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>
+🏠 Estimated House Price
+</h1>
+
+<div class="price">
+
+${{ "{:,.0f}".format(prediction) }}
+
+</div>
+
+<a href="/predict" class="btn">
+
+Predict Another
+
+</a>
+
+<a href="/dashboard" class="btn dashboard-btn">
+
+Back to Dashboard
+
+</a>
+
+</div>
+
+</body>
+
+</html>

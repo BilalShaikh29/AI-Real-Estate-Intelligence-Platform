@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Property Prediction</title>
+
+<style>
+
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+padding:40px;
+}
+
+.container{
+
+max-width:800px;
+margin:auto;
+
+background:#1e293b;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1{
+
+text-align:center;
+
+margin-bottom:30px;
+}
+
+input{
+
+width:100%;
+
+padding:12px;
+
+margin-bottom:15px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+}
+
+button{
+
+width:100%;
+
+padding:15px;
+
+background:#2563eb;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:0.3s;
+}
+
+button:hover{
+
+background:#1d4ed8;
+}
+
+.back-btn{
+
+display:block;
+
+text-align:center;
+
+margin-top:20px;
+
+padding:15px;
+
+background:#475569;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
+transition:0.3s;
+}
+
+.back-btn:hover{
+
+background:#334155;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+🏠 House Price Prediction
+</h1>
+
+<form action="/result" method="POST">
+
+<input type="number" name="OverallQual" placeholder="Overall Quality (1-10)" required>
+
+<input type="number" name="GrLivArea" placeholder="Ground Living Area (sq ft)" required>
+
+<input type="number" name="SecondFlrSF" placeholder="2nd Floor Area" required>
+
+<input type="number" name="TotalBsmtSF" placeholder="Total Basement Area" required>
+
+<input type="number" name="BsmtFinSF1" placeholder="Finished Basement Area" required>
+
+<input type="number" name="FirstFlrSF" placeholder="1st Floor Area" required>
+
+<input type="number" name="LotArea" placeholder="Lot Area" required>
+
+<input type="number" name="GarageArea" placeholder="Garage Area" required>
+
+<input type="number" name="GarageCars" placeholder="Garage Capacity (Cars)" required>
+
+<input type="number" name="YearBuilt" placeholder="Year Built" required>
+
+<button type="submit">
+
+Predict Price
+
+</button>
+
+</form>
+
+<a href="/dashboard" class="back-btn">
+
+← Back to Dashboard
+
+</a>
+
+</div>
+
+</body>
+
+</html>

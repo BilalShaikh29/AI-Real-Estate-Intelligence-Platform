@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#0f172a;
+min-height:100vh;
+padding:40px;
+}
+
+h1{
+text-align:center;
+color:white;
+font-size:50px;
+margin-bottom:20px;
+}
+
+.subtitle{
+text-align:center;
+color:#cbd5e1;
+margin-bottom:50px;
+font-size:18px;
+}
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+
+background:#1e293b;
+width:320px;
+padding:30px;
+border-radius:20px;
+text-align:center;
+color:white;
+
+transition:0.4s;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+}
+
+.card h2{
+
+margin-bottom:15px;
+}
+
+.card p{
+
+color:#cbd5e1;
+margin-bottom:25px;
+line-height:1.6;
+}
+
+.btn{
+
+display:inline-block;
+
+padding:12px 25px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:30px;
+}
+
+.btn:hover{
+
+background:#1d4ed8;
+}
+
+.home-btn{
+
+display:block;
+
+width:220px;
+
+margin:50px auto;
+
+text-align:center;
+
+padding:15px;
+
+background:#475569;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>
+🏠 AI Real Estate Intelligence Platform
+</h1>
+
+<p class="subtitle">
+Machine Learning Powered Property Valuation & Analytics
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h2>
+🏠 Price Prediction
+</h2>
+
+<p>
+Predict residential property prices using our trained Random Forest Machine Learning model.
+</p>
+
+<a href="/predict" class="btn">
+
+Open
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+📊 Analytics
+</h2>
+
+<p>
+Explore dataset statistics, model performance and feature analysis.
+</p>
+
+<a href="/analytics" class="btn">
+
+Open
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<h2>
+🤖 AI Insights
+</h2>
+
+<p>
+Understand how the model evaluates house prices and which factors matter most.
+</p>
+
+<a href="/insights" class="btn">
+
+Open
+
+</a>
+
+</div>
+
+</div>
+
+<a href="/" class="home-btn">
+
+← Back To Home
+
+</a>
+
+</body>
+
+</html>

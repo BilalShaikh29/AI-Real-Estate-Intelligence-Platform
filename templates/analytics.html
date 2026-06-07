@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Analytics Dashboard</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+background:linear-gradient(
+135deg,
+#020617,
+#0f172a,
+#1e293b
+);
+
+min-height:100vh;
+
+padding:40px;
+
+color:white;
+}
+
+.header{
+
+text-align:center;
+
+margin-bottom:50px;
+}
+
+.header h1{
+
+font-size:50px;
+
+margin-bottom:10px;
+}
+
+.header p{
+
+color:#cbd5e1;
+
+font-size:18px;
+}
+
+.stats{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-bottom:50px;
+}
+
+.card{
+
+background:#1e293b;
+
+padding:25px;
+
+border-radius:20px;
+
+width:250px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+transition:0.3s;
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+}
+
+.card h2{
+
+font-size:40px;
+
+color:#38bdf8;
+
+margin-bottom:10px;
+}
+
+.card p{
+
+color:#cbd5e1;
+}
+
+.section{
+
+max-width:1100px;
+
+margin:auto;
+}
+
+.section h2{
+
+margin-bottom:20px;
+
+font-size:32px;
+
+text-align:center;
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+}
+
+.feature-card{
+
+background:#1e293b;
+
+padding:20px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:0.3s;
+}
+
+.feature-card:hover{
+
+transform:scale(1.05);
+}
+
+.feature-card h3{
+
+color:#38bdf8;
+
+margin-bottom:10px;
+}
+
+.back-btn{
+
+display:block;
+
+width:250px;
+
+margin:50px auto;
+
+text-align:center;
+
+padding:15px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+}
+
+.back-btn:hover{
+
+background:#1d4ed8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>
+📊 Real Estate Analytics Dashboard
+</h1>
+
+<p>
+Machine Learning Model Performance & Property Market Insights
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+<h2>1460</h2>
+<p>Properties Analyzed</p>
+</div>
+
+<div class="card">
+<h2>89%</h2>
+<p>Model Accuracy (R²)</p>
+</div>
+
+<div class="card">
+<h2>10</h2>
+<p>Features Used</p>
+</div>
+
+<div class="card">
+<h2>RF</h2>
+<p>Random Forest Model</p>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>
+🏆 Top Features Influencing House Prices
+</h2>
+
+<div class="features">
+
+<div class="feature-card">
+<h3>OverallQual</h3>
+<p>Overall material and finish quality</p>
+</div>
+
+<div class="feature-card">
+<h3>GrLivArea</h3>
+<p>Above ground living area</p>
+</div>
+
+<div class="feature-card">
+<h3>2ndFlrSF</h3>
+<p>Second floor area</p>
+</div>
+
+<div class="feature-card">
+<h3>TotalBsmtSF</h3>
+<p>Total basement area</p>
+</div>
+
+<div class="feature-card">
+<h3>BsmtFinSF1</h3>
+<p>Finished basement area</p>
+</div>
+
+<div class="feature-card">
+<h3>1stFlrSF</h3>
+<p>First floor area</p>
+</div>
+
+<div class="feature-card">
+<h3>LotArea</h3>
+<p>Total lot size</p>
+</div>
+
+<div class="feature-card">
+<h3>GarageArea</h3>
+<p>Garage size</p>
+</div>
+
+<div class="feature-card">
+<h3>GarageCars</h3>
+<p>Garage capacity</p>
+</div>
+
+<div class="feature-card">
+<h3>YearBuilt</h3>
+<p>Construction year</p>
+</div>
+
+</div>
+
+</div>
+
+<a href="/dashboard" class="back-btn">
+
+← Back To Dashboard
+
+</a>
+
+</body>
+
+</html>
